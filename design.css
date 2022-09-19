@@ -1,0 +1,60 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    animation-name: background;
+    animation-duration: 10s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    background:linear-gradient( to right,#f54dc3,#fa84cd,#ff00aa,#b9006c,#d652aa,#f30aa5,#fd969bd8) ;
+    background-size: 500%;
+
+}
+
+@keyframes background{
+
+    0%{
+        background-position-x: 0%;
+    }
+
+    100%{
+        background-position-x: 100%;
+    }
+
+
+    }
+
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    flex-direction:row;
+    width:360px;
+    height: 350px;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 25px;
+    column-gap: 20px;
+    border-radius: 10px;
+    margin-top: 120px;
+    text-align: justify;
+    padding: 10px;
+    
+   
+
+}
+
+
+
+.pass{
+    flex: 0 0 100%;
+    padding:  30px;
+    scroll-snap-align: start;
+    border-radius: 10px;
+    background-color: aquamarine;
+    text-align: justify;
+    border: 2px solid black;
+
+    }
+
+
